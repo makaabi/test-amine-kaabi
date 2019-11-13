@@ -1,0 +1,16 @@
+<h1>Legumes du {{datea|date}}</h1> 
+
+<app-legume *ngFor="let t of tablegumes"
+[image]="t.image" 
+ [nom]="t.nom" 
+ [prix]="t.prix"
+ [frais]="t.frais" 
+
+>
+ 
+    
+    </app-legume>
+    Donner un prix minimum: <input type="text" [(ngModel)]="prixd"> 
+    Le nombre de légumzs ayant un prix >{{prixd}} est {{total()}}
+
+-->

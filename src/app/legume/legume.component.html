@@ -1,0 +1,4 @@
+<li [ngClass]="{'c1': frais}">
+    <img [src]="image"/>{{nom|uppercase}} prix(Kg):{{prix}} <input type="checkbox" [checked]="frais" > 
+    Frais Quantite<input type="text" [(ngModel)]="val" ><button (click)="calcprix()">Calculer Prix</button> <br>prix:{{somme}}
+</li>
